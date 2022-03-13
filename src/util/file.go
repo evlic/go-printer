@@ -7,7 +7,7 @@ import (
 	"path"
 	"path/filepath"
 	"strings"
-
+	
 	log "github.com/sirupsen/logrus"
 )
 
@@ -30,6 +30,10 @@ func IsDir(path string) bool {
 	return s.IsDir()
 }
 
+// CheckPath 对路径检查，如果不存在则 false
+func CheckPath() bool {
+
+}
 
 // CreatNestedFile create nested file
 func CreatNestedFile(path string) (*os.File, error) {
